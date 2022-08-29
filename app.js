@@ -19,7 +19,7 @@ const srvr = process.env.N1_KEY;
 const srvrCred = process.env.N1_SECRET;
 
 mongoose.connect("mongodb+srv://" + srvr + ":" + srvrCred + "@alberts-place.0nsi2.mongodb.net/todolistDB", {
-  useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false
+  useNewUrlParser: true, useUnifiedTopology: true
 });
 
 const itemsSchema = {
